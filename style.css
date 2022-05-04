@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400;500;600;700&display=swap');
+
+
+
+
+body {
+ margin: 0;
+ height: auto;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ transition: none;
+}
+
+*{
+  box-sizing: border-box;
+  font-family: 'Cairo', sans-serif;
+  transition: none;
+}
+.f-icon{
+  margin-top: -80px;
+  margin-bottom: -10px;
+}
+.f-icon i{
+  font-size: 30px;
+  color: green;
+  border-radius: 100px;
+  padding: 19px 15px 19px 17px;
+  background-color: rgba(0, 147, 3, 0.20);
+  animation: f-icon 2s ease-in-out infinite;
+}
+@keyframes f-icon{
+  0%{
+    box-shadow:0 0 0 0px rgba(0, 147, 3, 0.10);
+  }
+  100%{
+    box-shadow:0 0 0 20px rgba(0, 147, 3, 0.0);
+  }
+}
+.login{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: rgba(0,0,0,0.07);
+  width: 450px;
+  padding: 100px 0 40px 0;
+  box-shadow: 0 0 0 6px rgba(0,0,0,0.03);
+  border-radius: 10px;
+}
+.login h1{
+  font-family: 'Reem Kufi', sans-serif;
+  text-decoration: underline green;
+  color: green;
+  animation: h1-anim 0.6s;
+  margin-bottom: 60px;
+}
+@keyframes h1-anim{
+  0%{
+    transform: scale(0)
+  }
+  50%{
+    transform: scale(1.1)
+  }
+  100%{
+    transform: scale(1)
+  }
+}
+#p1{
+  margin-top: -30px;
+  margin-bottom: 45px;
+  color: darkgreen;
+  font-weight: 500;
+}
+.login a{
+  text-decoration: none;
+  color: grey;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.login-inputs{
+  width: 85%;
+  margin: auto;
+}
+.login-inputs input{
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  height: 45px;
+  font-size: 15px;
+  text-indent: 10px;
+  transition: 0.25s ease-in-out;
+}
+.login-inputs button[type=submit]{
+  background-color: green;
+  margin-top: 10px;
+  color: white;
+  transition: 0.25s ease-in-out;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  height: 45px;
+  font-size: 15px;
+  transition: 0.25s ease-in-out;
+}
+.login-inputs button[type=submit] i{
+  margin-left: 5px;
+  color: white;
+}
+.login-inputs label{
+  display: block;
+  text-align: right;
+  font-weight: 500;
+  margin-right: 1.5px;
+}
+.login-inputs input:focus{
+  box-shadow: 0 0 0 2px rgba(0, 147, 3, 0.25);
+}
+ /*button[type=submit]:focus*/#login-btn:focus, #register-btn:focus ,#register2:focus{
+  background-color: white;
+  box-shadow:  none ;
+  color: green;
+}
+.pass{
+  position: relative;
+}
+.fa-eye{
+  color: grey;
+  font-size: 19px;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: none;
+}
+.fa-eye-slash{
+  color: grey;
+  font-size: 19px;
+  position: absolute;
+  top: 12px;
+  right: 10.6px;
+  display: none;
+}
+.or{
+  height: 15px ;
+  border-bottom: 1.5px solid darkgrey;
+  width: 85%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px
+}
+.or p{
+  background-color: rgb(236, 237, 236);
+  width: 25px;
+  margin: auto;
+}
+#p-login{
+  width: 130px;
+}
+.register{
+  width: 85%;
+  margin: auto;
+}
+.register a{
+  width: 100%;
+  outline: none;
+  text-decoration: none;
+}
+#register-btn{
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: royalblue;
+  border-radius: 5px;
+  color: white;
+  height: 45px;
+  font-size: 15px;
+  text-indent: none;
+  transition: 0.25s ease-in-out;
+}
+#register-btn i{
+  margin-left: 5px;
+}
+.remark{
+  background-color: rgba(245, 241, 39, 0.20);
+  margin-top: 45px;
+  width: 85%;
+  border-radius: 7px;
+  margin: auto;
+  text-align: right;
+  padding: 2.5px 15px;
+  margin-top: 10px;
+  position: relative;
+}
+.remark p{
+  color: black;
+  font-size: 15px;
+}
+.remark p span{
+  color: rgba(103, 104, 0, 1);
+  font-weight: 700;
+}
+#icon{
+  position: absolute;
+  right: -5px;
+  top: -10px;
+  font-size: 20px;
+}
+#sign{
+  color: red;
+  font-weight: 900;
+  font-family: sans-serif;
+  font-size: 17px;
+}
+
+label[for=name]::before, label[for=last-name]::before, label[for=email]::before, label[for=password]::before{
+  content: "*";
+  color: red;
+  font-size: 17px;
+  margin-right: 5px;
+}
