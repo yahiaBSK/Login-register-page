@@ -120,7 +120,7 @@ body {
   margin-right: 1.5px;
 }
 .login-inputs input:focus{
-  box-shadow: 0 0 0 2px rgba(0, 147, 3, 0.25);
+  box-shadow:0 0 0 0.7px rgba(0, 147, 3, 0.50), 0 0 0 3px rgba(0, 147, 3, 0.16);
 }
  /*button[type=submit]:focus*/#login-btn:focus, #register-btn:focus ,#register2:focus{
   background-color: white;
